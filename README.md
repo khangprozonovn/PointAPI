@@ -1,6 +1,6 @@
 | View Count |
 | :---: |
-| [![View Count](http://hits.dwyl.io/ZzKino/PointAPI.svg)](http://hits.dwyl.io/ZzKino/PointAPI.svg)) | |
+| [![View Count](http://hits.dwyl.io/ZzKino/PointAPI.svg)](http://hits.dwyl.io/ZzKino/PointAPI.svg) |
 
 # PointAPI
 Plugin được chỉnh sửa từ EconomyAPI
