@@ -95,17 +95,21 @@ class SortTask extends AsyncTask{
 			if($this->sender === "CONSOLE"){
 				$plugin->getLogger()->info($output);
 			}else{
-				 $formapi = $plugin->getServer()->getPluginManager()->getPlugin("FormAPI");
-   	 if($formapi === null || $formapi->isDisabled()){
-                        }
-		$form = $formapi->createCustomForm(function (Player $event,  $args){
-											              $result = $args[0];
+			$formapi = $plugin->getServer()->getPluginManager()->getPlugin("FormAPI");
+        	   if($formapi === null || $formapi->isDisabled()){
+        	   	$player->sendMessage($output);
+             }
+		    $form = $formapi->createCustomForm(function (Player $event, $args){
+			    if(($result = $args[0]) != null{
+				$page = $result +1;
+                $this->getServer()->getCommandMap()->dispatch($player, 'toppoint $page');
+			}
+
 											
 		});
-   $form->setTitle("§6§lTOP Point");
-   $form->addLabel($output);
-   $form->sendToPlayer($player);
-				//$player->sendMessage($output);
+          $form->setTitle("§6§lTOP Point");
+          $form->addLabel($output);
+          $form->sendToPlayer($player);
 			}
 		}
 	}
