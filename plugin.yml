@@ -1,6 +1,6 @@
 name: PointAPI
 main: doramine\economyapi\EconomyAPI
-version: "2.0.9"
+version: "3.0.0"
 author: onebone#editPhuongaz
 api:
 - 3.0.0
